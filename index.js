@@ -6,7 +6,7 @@ const employee =
 }
 function updateEmployeeWithKeyAndValue(employee, key, value)
 {
-    const updateEmp = {...employee}
+    let updateEmp = {...employee}
     updateEmp[key] = value;
     return updateEmp;
 
@@ -21,7 +21,7 @@ function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value)
 destructivelyUpdateEmployeeWithKeyAndValue()
 
 function deleteFromEmployeeByKey(employee, key){
-    const  updateEmp = { ...employee };
+    let updateEmp = { ...employee };
     delete updateEmp [key];
     return updateEmp ;
 }
